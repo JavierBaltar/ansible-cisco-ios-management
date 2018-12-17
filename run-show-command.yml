@@ -3,11 +3,11 @@
   
   tasks:
     - name: Test Reachability to Ansible
-    ios_ping:
+      ios_ping:
       dest: 172.29.29.12
 
     - name: Command
-    ios_command:
+      ios_command:
       commands:
         - show version
       register: version
