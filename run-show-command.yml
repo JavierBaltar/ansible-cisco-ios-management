@@ -1,12 +1,11 @@
 ---
+-hosts: all
   tasks:
   - name: Test Reachability to Ansible
-    hosts: all
     ios_ping:
       dest: 172.29.29.12
 
   - name: Command
-    hosts: all
     ios_command:
       commands:
         - show version
@@ -14,4 +13,3 @@
     
   - debug: var=version.stdout_lines
 
- 
