@@ -1,15 +1,15 @@
----
--hosts: all
+- hosts: all
+  gather_facts: true
+  
   tasks:
-  - name: Test Reachability to Ansible
+    - name: Test Reachability to Ansible
     ios_ping:
       dest: 172.29.29.12
 
-  - name: Command
+    - name: Command
     ios_command:
       commands:
         - show version
-    register: version
+      register: version
     
-  - debug: var=version.stdout_lines
-
+    - debug: var=version.stdout_lines
