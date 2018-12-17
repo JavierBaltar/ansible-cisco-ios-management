@@ -1,31 +1,17 @@
 ---
-- hosts: customer15
-  gather_facts: no
-  connection: local
 
-  tasks:
-  - name: Login
-    include_vars: /etc/ansible/secrets.yml
-
-  - name: Provider
-    set_fact:
-      provider:
-        host: "{{ inventory_hostname }}"
-        username: "{{ creds['username'] }}"
-        password: "{{ creds['password'] }}"
 
   - name: Test Reachability to Ansible
     ios_ping:
-      provider: "{{ provider }}"
+      
       dest: 172.29.29.12
 
   - name: Command
     ios_command:
-      provider: "{{ provider }}"
+      
       commands:
         - show version
     register: version
-    with_items: "{{inventory_hostname }}"
-    when: "item == '172.29.240.19'"
+    
 
   - debug: var=version.stdout_lines
