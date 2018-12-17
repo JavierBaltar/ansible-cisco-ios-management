@@ -2,14 +2,7 @@
   gather_facts: true
   
   tasks:
-    - name: Test Reachability to Ansible
-      ios_ping:
-      dest: 172.29.29.12
-
-    - name: Command
-      ios_command:
-      commands:
-        - show version
-      register: version
-    
-    - debug: var=version.stdout_lines
+  - name: configure VLAN ID and name
+    net_vlan:
+      vlan_id: 20
+      name: test-vlan
