@@ -8,6 +8,6 @@
           commands: show running-config
        register: show_run
        
-      - copy:
-        content: "{{ show_run.stdout[0] }}"
-        dest: "/var/lib/awx/projects/hcs11/{{ inventory_hostname }}.txt"
+     - copy:
+          content: "{{ show_run.stdout[0] }}"
+          dest: "/var/lib/awx/projects/hcs11/{{ inventory_hostname }}.txt"
