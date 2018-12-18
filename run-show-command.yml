@@ -3,9 +3,14 @@
   connection: local
   
   tasks:
-    - name: configure VLAN ID and name
-      net_vlan:
+    - name: Save running config to file
+      ios_command::
         provider: "{{login_info}}" 
-        vlan_id: 20
-        name: test-vlan
+        commands: show running-config
+      register: show_run
 
+
+    - name: Copy Config to file
+      copy:
+        content: "{{ show_run.stdout[0] }}"
+        dest: "/var/lib/awx/projects/hcs11/{{ inventory_hostname }}.txt" 
