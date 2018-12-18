@@ -3,14 +3,13 @@
   connection: local
   
   tasks:
-    - name: Save running config to file
-      ios_command::
+     - ios_command::
         provider: "{{login_info}}" 
         commands: show running-config
       register: show_run
 
 
-    - name: Copy Config to file
-      copy:
+      - copy:
         content: "{{ show_run.stdout[0] }}"
         dest: "/var/lib/awx/projects/hcs11/{{ inventory_hostname }}.txt" 
+
