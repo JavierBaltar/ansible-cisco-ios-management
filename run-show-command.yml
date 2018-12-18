@@ -1,11 +1,12 @@
+---
 - hosts: all
-  vars:
-    network:
-      username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
-      password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
+  connection: network_cli
+ 
   
   tasks:
-  - name: configure VLAN ID and name
-    net_vlan:
-      vlan_id: 20
-      name: test-vlan
+    - name: configure VLAN ID and name
+      net_vlan:
+        vlan_id: 20
+        name: test-vlan
+
+
