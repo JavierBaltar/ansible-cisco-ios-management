@@ -3,9 +3,9 @@
   connection: local
  
   vars:
-  network:
-    username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
-    password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
+    network:
+      username: '{{ lookup("env", "ANSIBLE_NET_USERNAME") }}'
+      password: '{{ lookup("env", "ANSIBLE_NET_PASSWORD") }}'
   
   tasks:
     - name: configure VLAN ID and name
