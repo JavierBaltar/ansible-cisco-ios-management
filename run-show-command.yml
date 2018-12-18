@@ -4,9 +4,9 @@
   
   tasks:
      - ios_command::
-        provider: "{{login_info}}" 
-        commands: show running-config
-      register: show_run
+          provider: "{{login_info}}" 
+          commands: show running-config
+       register: show_run
 
 
       - copy:
