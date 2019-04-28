@@ -4,9 +4,8 @@ This repository provides playbooks for managing Cisco IOS devices
 <p align="center">
   <a href="#Getting-Started">Getting Started</a> •
   <a href="#Playbooks">Playbooks</a> •
-  <a href="#Authors">Authors</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
+  <a href="#Related">Related</a> •
+  <a href="#Authors">Authors</a>
 </p>
 
 ## Getting Started
