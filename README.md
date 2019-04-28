@@ -28,6 +28,22 @@ tasks:
           provider: "{{login_info}}"
 ```
 
+### Run Show Version
+```yaml
+
+  - name: Test reachability to Ansible host
+    ios_ping:
+      dest: 10.0.0.1
+
+  - name: Run show version
+    ios_command:
+      commands:
+        - show version
+    register: version
+   
+- debug: var=version.stdout_lines
+```
+
 ## Related
 
 * [Ansible](https://www.ansible.com) - Configuration Management
