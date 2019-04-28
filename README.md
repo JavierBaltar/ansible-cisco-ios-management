@@ -10,7 +10,7 @@ This repository provides playbooks for managing Cisco IOS devices
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The playbooks are tested using Ansible and AWX with a Cisco VG202XM Analog Voice Gateway running IOS 15.3(2)T
 
 ## Playbooks
 
