@@ -19,11 +19,17 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```yaml
-Give examples
+tasks:
+     - ios_config:
+          provider: "{{login_info}}" 
+          lines:
+            - mgcp call-agent 10.0.0.10
+          before: "no mgcp call-agent 10.0.0.9"  
+       
+     - ios_config:
+          save: yes
+          provider: "{{login_info}}"
 ```
-
-
-
 
 ## Running the tests
 
