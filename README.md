@@ -1,15 +1,9 @@
-# cpe-upgrade
-
 # ansible-cisco-ios-management
-
-One Paragraph of project description goes here
-
-
+This repository provides playbooks for managing Cisco IOS devices
 
 <p align="center">
   <a href="#Getting-Started">Getting Started</a> •
-  <a href="#Prerequisites">Prerequisites</a> •
-  <a href="#Installing">Installing</a> •
+  <a href="#Playbooks">Playbooks</a> •
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
   <a href="#license">License</a>
@@ -19,7 +13,7 @@ One Paragraph of project description goes here
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+## Playbooks
 
 What things you need to install the software and how to install them
 
