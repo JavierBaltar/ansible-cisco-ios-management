@@ -30,31 +30,7 @@ tasks:
           provider: "{{login_info}}"
 ```
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes
-
-## Built With
+## Related
 
 * [Ansible](https://www.ansible.com) - Configuration Management
 * [AWX](https://github.com/ansible/awx) - Configuration Management
@@ -63,23 +39,3 @@ Add additional notes
 ## Authors
 
 * **Javier Baltar** - *Initial work* - [GitHub](https://github.com/JavierBaltar)
-
-
-## License
-
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-
-```python
-var editor = new tui.Editor({
-    el: document.querySelector('#editSection'),
-    initialEditType: 'markdown',
-    previewStyle: 'vertical',
-    height: '300px'
-});
-```
