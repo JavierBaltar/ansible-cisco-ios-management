@@ -1,13 +1,14 @@
-# ansible-cisco-ios-management
-This repository provides playbooks for managing Cisco IOS devices
-
 <p align="center">
   <a href="#Getting-Started">Getting Started</a> •
   <a href="#Playbooks">Playbooks</a> •
-  <a href="#credits">Credits</a> •
+  <a href="#Authors">Authors</a> •
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
+
+# ansible-cisco-ios-management
+This repository provides playbooks for managing Cisco IOS devices
+
 
 ## Getting Started
 
@@ -17,27 +18,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
+```yaml
 Give examples
 ```
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
