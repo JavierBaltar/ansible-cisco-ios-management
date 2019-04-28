@@ -1,3 +1,6 @@
+# ansible-cisco-ios-management
+This repository provides playbooks for managing Cisco IOS devices
+
 <p align="center">
   <a href="#Getting-Started">Getting Started</a> •
   <a href="#Playbooks">Playbooks</a> •
@@ -5,10 +8,6 @@
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
-
-# ansible-cisco-ios-management
-This repository provides playbooks for managing Cisco IOS devices
-
 
 ## Getting Started
 
